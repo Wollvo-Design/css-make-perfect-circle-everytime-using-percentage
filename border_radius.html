@@ -6,12 +6,10 @@
     <title>Make Everything Round</title>
     <style>
       :root {
-        --height-width-value-betaPercentage: 40px;
-        --height-width-value-alphaPercentage: 80px;
-        --height-width-value-gammaPercentage: 100px;
-        --height-width-value-betaPixel: 40px;
-        --height-width-value-alphaPixel: 80px;
-        --height-width-value-gammaPixel: 100px;
+        --height-width-value-alpha-both: 40px;
+        --height-width-value-beta-both: 80px;
+        --height-width-value-gamma-both: 100px;
+        --height-width-value-gamma-both: 100px;
         --circle-color-pixel: #1eb141;
         --circle-color-percentage: #7825c6;
       }
@@ -46,8 +44,8 @@
         background-color: #192a1e;
       }
       .alphaPercentage {
-        width: var(--height-width-value-betaPercentage);
-        height: var(--height-width-value-betaPercentage);
+        width: var(--height-width-value-alpha-both);
+        height: var(--height-width-value-alpha-both);
         background-color: var(--circle-color-percentage);
         border-radius: var(--border-radius-value-percentage);
         display: flex;
@@ -56,8 +54,8 @@
         font-size: 12px;
       }
       .betaPercentage {
-        width: var(--height-width-value-alphaPercentage);
-        height: var(--height-width-value-alphaPercentage);
+        width: var(--height-width-value-beta-both);
+        height: var(--height-width-value-beta-both);
         background-color: var(--circle-color-percentage);
         border-radius: var(--border-radius-value-percentage);
         display: flex;
@@ -66,8 +64,8 @@
         font-size: 12px;
       }
       .gammaPercentage {
-        width: var(--height-width-value-gammaPercentage);
-        height: var(--height-width-value-gammaPercentage);
+        width: var(--height-width-value-gamma-both);
+        height: var(--height-width-value-gamma-both);
         background-color: var(--circle-color-percentage);
         border-radius: var(--border-radius-value-percentage);
         display: flex;
@@ -76,8 +74,8 @@
         font-size: 12px;
       }
       .alphaPixel {
-        width: var(--height-width-value-betaPixel);
-        height: var(--height-width-value-betaPixel);
+        width: var(--height-width-value-alpha-both);
+        height: var(--height-width-value-alpha-both);
         background-color: var(--circle-color-pixel);
         border-radius: var(--border-radius-value-pixel);
         display: flex;
@@ -86,8 +84,8 @@
         font-size: 12px;
       }
       .betaPixel {
-        width: var(--height-width-value-alphaPixel);
-        height: var(--height-width-value-alphaPixel);
+        width: var(--height-width-value-beta-both);
+        height: var(--height-width-value-beta-both);
         background-color: var(--circle-color-pixel);
         border-radius: var(--border-radius-value-pixel);
         display: flex;
@@ -96,8 +94,8 @@
         font-size: 12px;
       }
       .gammaPixel {
-        width: var(--height-width-value-gammaPixel);
-        height: var(--height-width-value-gammaPixel);
+        width: var(--height-width-value-gamma-both);
+        height: var(--height-width-value-gamma-both);
         background-color: var(--circle-color-pixel);
         border-radius: var(--border-radius-value-pixel);
         display: flex;
@@ -135,8 +133,8 @@
           </style>
         </div>
         <div class="alphaPercentage">40 px</div>
-        <div class="betaPercentage">60 px</div>
-        <div class="gammaPercentage">80 px</div>
+        <div class="betaPercentage">80 px</div>
+        <div class="gammaPercentage">100 px</div>
       </div>
       <div class="unitPixel">
         <div class="headingPixel">Pixel</div>
@@ -159,8 +157,10 @@
           </style>
         </div>
         <div class="alphaPixel">40 px</div>
-        <div class="betaPixel">60 px</div>
-        <div class="gammaPixel">80 px</div>
+        <div class="betaPixel">80 px</div>
+        <div class="gammaPixel">100 px</div>
+        <div class="gammaPixel">150 px</div>
+      </div>
       </div>
     </div>
   </body>
