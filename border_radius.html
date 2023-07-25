@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Make Everything Round</title>
     <style>
+
+/* Variable for height, width, and color.  */
       :root {
         --height-width-value-alpha-both: 40px;
         --height-width-value-beta-both: 80px;
-        --height-width-value-gamma-both: 100px;
-        --height-width-value-gamma-both: 100px;
+        --height-width-value-gamma-both: 150px;
         --circle-color-pixel: #1eb141;
         --circle-color-percentage: #7825c6;
       }
+
+      /* outer container setup */
       * {
         padding: 0;
         margin: 0px;
         color: #ffffff;
       }
+
       .container {
         display: flex;
         height: 100dvh;
@@ -25,6 +29,7 @@
         justify-content: space-evenly;
         align-content: space-evenly;
       }
+
       .unitPercentage {
         display: flex;
         height: 100dvh;
@@ -34,6 +39,7 @@
         align-items: center;
         background-color: #22192b;
       }
+
       .unitPixel {
         display: flex;
         height: 100dvh;
@@ -43,6 +49,14 @@
         align-items: center;
         background-color: #192a1e;
       }
+
+      .headingPercentage,
+      .headingPixel {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+
+      /* Code starts for circle elements */
       .alphaPercentage {
         width: var(--height-width-value-alpha-both);
         height: var(--height-width-value-alpha-both);
@@ -103,17 +117,14 @@
         align-items: center;
         font-size: 12px;
       }
-      .headingPercentage,
-      .headingPixel {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="unitPercentage">
         <div class="headingPercentage">Percentage</div>
+
+        <!-- Start, Code to edit content on the website -->
         <div class="editStylePercentage">
           <style
             style="
@@ -132,12 +143,16 @@
             }
           </style>
         </div>
+        <!-- End, Code to edit content on the website -->
+
         <div class="alphaPercentage">40 px</div>
         <div class="betaPercentage">80 px</div>
-        <div class="gammaPercentage">100 px</div>
+        <div class="gammaPercentage">150 px</div>
       </div>
       <div class="unitPixel">
         <div class="headingPixel">Pixel</div>
+
+        <!-- Start, Code to edit content on the website -->
         <div class="editStylePercentage">
           <style
             style="
@@ -156,9 +171,10 @@
             }
           </style>
         </div>
+        <!-- End, Code to edit content on the website -->
+        
         <div class="alphaPixel">40 px</div>
         <div class="betaPixel">80 px</div>
-        <div class="gammaPixel">100 px</div>
         <div class="gammaPixel">150 px</div>
       </div>
       </div>
